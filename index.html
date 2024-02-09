@@ -24,7 +24,7 @@
         var b = document.getElementById("sno").value;
         //var c = parseFloat(a) + parseFloat(b); 
     
-        const response = await fetch("https://arithmetic-service-harshitgupta1998.onrender.com//add/"+a +"/"+b);
+        const response = await fetch("https://arithmetic-service-harshitgupta1998.onrender.com/add/"+a +"/"+b);
         const c = await response.json();
         document.getElementById("answer").innerHTML =  c;
     }
